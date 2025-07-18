@@ -9,7 +9,9 @@
   font-style: normal;
 }
 /* shared style use ane where */
-
+main > section {
+    margin-top: 120px;
+}
 .btn-primary {
     background-color: #FF900E;
     height: 64px;
@@ -41,6 +43,10 @@
 
 
 /* header style start here */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .header {
     /* padding: 3.5rem 12rem; */
 }
@@ -106,6 +112,45 @@ max-width: 850px;
     /* height: 700px; */
 }
 
+/* main stile start here  */
+
+/* quick list future */
+.quick-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.quick-lst-container {
+
+
+}
+
+.quick-list {
+    align-items: center;
+
+}
+
+
+.quick-contats {
+    margin-left: 120px;
+    /* width: 537px;
+    height: 304px; */
+}
+
+h3.quick-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+#quick {
+     color: #727272;
+     font-weight: 500;
+}
+.fucer {
+    color: #FF900E;
+}    
+.quict-des {
+    color: #727272;
+}
 /* Responsive style start here */
 /* small devices style here  */
 @media screen and (max-width: 576px) {
@@ -116,11 +161,29 @@ max-width: 850px;
     li.nav-link {
     margin: 10px;
 }
+
+section {
+    flex-direction: column;
+}
+
+
+.quick-imgs {
+       grid-template-columns: 1fr;
+    /* gap: 24px; */
+}
+
+.quick-contats {
+    margin: 0 auto;
+}
 }
 
 /* Responsive for tablet devices */
 @media screen and (min-width: 576px) and (max-width: 996px) {
     .navbar {
+        flex-direction: column;
+    }
+
+    .quick-list {
         flex-direction: column;
     }
 }
