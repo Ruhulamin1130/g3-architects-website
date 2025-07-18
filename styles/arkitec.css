@@ -151,6 +151,41 @@ h3.quick-title {
 .quict-des {
     color: #727272;
 }
+
+/* some style here */
+
+
+h3.some-title {
+    font-size: 2.3rem;
+}
+p.some-des {
+    color: #727272;
+}
+
+.some-crd {
+    
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.some-roup {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+h3.crd-ti {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #727272;
+    padding: 0px;
+    margin: 5px auto;
+}
 /* Responsive style start here */
 /* small devices style here  */
 @media screen and (max-width: 576px) {
@@ -175,6 +210,10 @@ section {
 .quick-contats {
     margin: 0 auto;
 }
+
+.some-roup {
+    grid-template-columns: 1fr;
+}
 }
 
 /* Responsive for tablet devices */
@@ -186,4 +225,8 @@ section {
     .quick-list {
         flex-direction: column;
     }
+
+    .some-roup {
+    grid-template-columns: repeat(2, 1fr);
+}
 }
