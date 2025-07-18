@@ -186,6 +186,28 @@ h3.crd-ti {
     padding: 0px;
     margin: 5px auto;
 }
+
+.spon-imgs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+    filter: grayscale(1);
+    
+}
+
+.sponsor-con {
+    width: 542px;
+    height: 129px;
+    margin: 0 auto;
+     text-align: center;
+}
+.sponsor-con { 
+  
+}
+h3.spn-tile {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
 /* Responsive style start here */
 /* small devices style here  */
 @media screen and (max-width: 576px) {
@@ -214,6 +236,10 @@ section {
 .some-roup {
     grid-template-columns: 1fr;
 }
+.spon-imgs {
+    
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 /* Responsive for tablet devices */
